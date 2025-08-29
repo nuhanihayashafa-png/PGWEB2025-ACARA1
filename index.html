@@ -4,19 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acara 1 |HTML CSS</title>
+    <title>Acara 1 | HTML CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .centered {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .lefted {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: rgb(21, 14, 115);
+        }
+
+        h3 {
+            color: rgb(59, 128, 206);
+            margin-top: 20px;
+        }
+
+        h4 {
+            color: rgb(44, 113, 216);
+            margin-top: 15px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        img {
+            margin: 15px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #16339b;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
-    <main>
+    <main class="centered">
         <!-- Judul-->
-        <h1 style="color: deeppink;">Profil Kabupaten Semarang</h1>
+        <h1>Profil Kabupaten Semarang</h1>
 
         <!-- Sub judul-->
-        <h3 style="color: lightcoral;">Jawa Tengah</h3>
-<hr>
+        <h3>Jawa Tengah</h3>
+        <hr>
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOFehNy4MzQAlhPGTZjKs-454QR16sGsIZqbQRdLiZQrcrRbDwrUOwqWElhzgoaZRMlZKc4OXMOLFmCLDzQjycTlaAQ521ihg-dOr5D5M1TB5h9sQDLkEAJWylylr5EcMKe3w1Vwezb5oh167MxhXdgDRxAPKy3MWhoqE29M84Qf_r3sc51zQq-v5Pg/s1024/Slide1.JPG"
+            width="500" height="333" alt="Pemandangan Kabupaten Semarang Jawa Tengah">
+
+        <h3>DO YOU KNOW?</h3>
+
         <!-- Deskripsi-->
-        <p>Kabupaten Semarang (bahasa Jawa: Hanacaraka: ꦱꦼꦩꦫꦁ, Pegon: سيماراڠ, Hanzi: 三宝垄 translit. Semarang) adalah
+        <p>
+            Kabupaten Semarang (bahasa Jawa: Hanacaraka: ꦱꦼꦩꦫꦁ, Pegon: سيماراڠ, Hanzi: 三宝垄 translit. Semarang) adalah
             sebuah wilayah kabupaten yang terletak di Provinsi Jawa Tengah, Indonesia. Ibu kotanya adalah Ungaran.
             Kabupaten ini berbatasan dengan Kota Semarang di utara; Kabupaten Demak dan Kabupaten Grobogan di timur;
             Kabupaten Boyolali di timur dan selatan; serta Kabupaten Magelang, Kabupaten Temanggung, dan Kabupaten
@@ -24,15 +93,19 @@
             tahun 2021 sebanyak 1.089.767 jiwa, dengan Slogan kabupaten ini adalah sebagai Bumi Serasi yang merupakan
             akronim dari "Sehat, Rapi, Aman, Sejahtera, dan Indah".
         </p>
-        <p>Kabupaten Semarang pertama kali didirikan oleh Raden Kaji Kasepuhan (dikenal sebagai Ki Pandan Arang II) pada
-            tanggal 2 Mei 1547 dan disahkan oleh Sultan Hadiwijaya. Kata "Semarang" konon merupakan pemberian dari Ki
+
+        <p>
+            Kabupaten Semarang pertama kali didirikan oleh Raden Kaji Kasepuhan (dikenal sebagai Ki Pandan Arang II)
+            pada tanggal 2 Mei 1547 dan disahkan oleh Sultan Hadiwijaya. Kata "Semarang" konon merupakan pemberian dari Ki
             Pandan Arang II, ketika dalam perjalanan ia menjumpai deretan pohon asam (Bahasa Jawa: asem) yang berjajar
             secara jarang (Bahasa Jawa: arang-arang), sehingga tercipta nama Semarang.
         </p>
         <hr>
+    </main>
 
-        <!-- Tabel Jumlah Penduduk-->
-        <h4 style="color: darksalmon;">Tabel Jumlah Penduduk</h4>
+    <!-- Bagian tabel di kiri -->
+    <section class="lefted">
+        <h4>Tabel Jumlah Penduduk</h4>
         <table>
             <tr>
                 <th>No</th>
@@ -55,8 +128,11 @@
                 <td>1.089.767 jiwa</td>
             </tr>
         </table>
-<hr>
-        <!-- List kecamatan-->
+        <hr>
+    </section>
+
+    <!-- Bagian list kecamatan di kiri -->
+    <section class="lefted">
         <h4>Kecamatan</h4>
         <ol>
             <li>Getasan</li>
@@ -77,9 +153,9 @@
             <li>Pringapus</li>
             <li>Bergas</li>
             <li>Ungaran Barat</li>
-            <li>Ungaran Timur
+            <li>Ungaran Timur</li>
         </ol>
-    </main>
+    </section>
 </body>
 
 </html>
